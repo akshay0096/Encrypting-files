@@ -15,7 +15,7 @@ class Encrypt
 			store[i]=fin.read();
 		}
 		for(int i=0;i<length;i++)
-			store[i]+=10;
+			store[i]+=10;//this is the main logic the encryption is based on
 		FileOutputStream fout=new FileOutputStream(p);
 		for(int i=0;i<length;i++)
 		{
@@ -73,6 +73,7 @@ class Password
 		FileOutputStream ffout=new FileOutputStream("f:"+pass+".txt");
 	}
 }
+//My main class:
 class Encryption
 {
 	public static void main(String[] args) throws IOException
